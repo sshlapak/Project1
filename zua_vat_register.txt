@@ -1,0 +1,20 @@
+report zua_vat_register.
+
+include zua_vat_register_top.
+include zua_vat_register_selscr.
+include zua_vat_register_seleve.
+include zua_vat_register_screvent.
+
+initialization.
+  gs_variant-report     = sy-repid.
+  sscrfields-functxt_01 = text-007. "Current month
+  sscrfields-functxt_02 = text-008. "Previous month
+
+start-of-selection.
+
+  if lines( s_budat ) is initial.
+    message text-009 type 'I' display like 'E'.
+    leave list-processing.
+  endif.
+
+  call screen 0100.
