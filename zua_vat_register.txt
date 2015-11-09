@@ -9,6 +9,8 @@ initialization.
   gs_variant-report     = sy-repid.
   sscrfields-functxt_01 = text-007. "Current month
   sscrfields-functxt_02 = text-008. "Previous month
+  sscrfields-functxt_03 = text-009. "new button
+
 
 start-of-selection.
 
