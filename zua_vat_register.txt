@@ -19,5 +19,4 @@ start-of-selection.
     leave list-processing.
   endif.
 
-*  call screen 0100.
-   call screen 0200.
+  call screen 0100.
